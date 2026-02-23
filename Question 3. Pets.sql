@@ -11,9 +11,7 @@
 	Write a query that select all distinct pet names.
 */
 
-select distinct name from 
-(
+
  select name from dogs
- union all
+ union 
  select name from cats
-) a
